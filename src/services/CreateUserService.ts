@@ -8,9 +8,8 @@ interface IUserRequest {
 }
 
 class CreateUserService {
-    static execute(arg0: { name: any; email: any; admin: any; }) {
-        throw new Error("Method not implemented.");
-    }
+    
+   
     async execute({ name, email, admin}: IUserRequest) {
         const UsersRepository = getCustomRepository(UsersRepositories);
 
